@@ -41,8 +41,9 @@ power2 n k
 
 	--assigment 4
 --a)
-	-- To see if the statments are true or not we have to check for some values which are not in the Range of the two functions such as if it bettween  1 to 100.Might also check for the value of 0 and something which is outside the value of the list such as checking for the value of -1000.For the value of -1000 should give that the value is not the same. This is then solved by ptting into a  list wher you compare the value from the first list to the other.
-		
+	-- To see if the statments are true or not we have to check for some values which are not in the Range of the two functions such as if it bettween  1 to 100.
+--Might also check for the value of 0 and something which is outside the value of the list such as checking for the value of -1000.For the value of -1000 should give that the value is not the same. 
+--This is then solved by ptting into a  list wher you compare the value from the first list to the other.
 		
 --b)
 comparePower1:: Integer->Integer->Bool 
