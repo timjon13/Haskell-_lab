@@ -1,0 +1,18 @@
+	--assigment 5
+
+pad :: String -> Int -> String
+pad n s = n ++ replicate (s - length n) ' ' --  This pads the string s so that it is n columns wide
+
+setupTable t p p1 p2 = n ++ po ++ po1 ++ po2 -- This part d
+	where
+		n = pad (show t) 6
+		po  = pad (show p) 10
+		po1 = pad (show p1) 11
+		po2 = show p2
+
+-- This takes table x n and put into power x n, power1 x n and power2 x n. 
+-- n starts at 0 and for each time the value of it goes up the table starts a new line and it ends at the value of n that was put in
+
+table x n = putStr $ unlines $
+  lables : [setupTable n (power x n) (power1 x n) (power2 x n) | n <- [0..n]] 
+    where lables = "n     power     power1     power2"
